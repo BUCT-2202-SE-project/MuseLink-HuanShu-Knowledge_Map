@@ -71,7 +71,7 @@
 MATCH (m:Museum)-[r1:包含]->(a:Artifact)
 MATCH (a)-[r2:年代]->(p:Period)
 MATCH (a)-[r3:作者]->(artist:Artist)
-RETURN m, r1, a, r2, p, r3, artist SKIP 1000 LIMIT 1000
+RETURN m, r1, a, r2, p, r3, artist SKIP 25000 LIMIT 500
 ```
 
 

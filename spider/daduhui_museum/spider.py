@@ -13,7 +13,7 @@ def get_object_details(object_id):
             # 获取详细信息，包括标题、年代、类型、图片、入藏编号等
             title = data.get('title', 'Unknown')
             period = data.get('objectDate', 'Unknown')  # 使用objectDate字段作为时代
-            medium = data.get('medium', 'Unknown')  # 使用medium字段作为替代描述
+            medium = data.get('medium', 'Unknown')  #s
             primary_image = data.get('primaryImage', None)  # 确保图片字段为空时设置为None
             
             # 如果图片为空，则设置为'Unknown'
