@@ -16,7 +16,7 @@ def get_object_details(object_id):
             medium = data.get('medium', 'Unknown')  #s
             primary_image = data.get('primaryImage', None)  # 确保图片字段为空时设置为None
             
-            # 如果图片为空，则设置为'Unknown'
+            
             primary_image_url = 'Unknown' if not primary_image else primary_image
 
             object_url = data.get('objectURL', 'Unknown')
